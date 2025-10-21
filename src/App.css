@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+
+@layer base {
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-[5px] h-[5px];
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 transition-colors duration-300;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-600;
+  }
+}
